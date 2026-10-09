@@ -3,3 +3,18 @@
 .answer-panel{margin:12px 0 30px;border:1px solid #b9d7d2;border-left:4px solid var(--accent);background:#f5faf9}.answer-panel summary{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 22px;cursor:pointer;list-style:none;color:var(--ink);user-select:none}.answer-panel summary::-webkit-details-marker{display:none}.answer-panel summary::after{content:"＋";font-size:21px;line-height:1;color:var(--accent)}.answer-panel[open] summary::after{content:"－"}.answer-label{font-weight:700}.answer-action{margin-left:auto;font-size:13px;color:var(--muted)}.answer-panel[open] .answer-action{display:none}.answer-body{padding:23px 24px 26px;border-top:1px solid #cfe1de;background:#fff;font-size:16px;line-height:1.9;overflow-wrap:break-word}.answer-body>p{margin:0 0 17px}.answer-body>p:last-child{margin-bottom:0}.answer-body .math-display{background:#f7faf9}.answer-body .table-scroll{margin:22px 0}.table-section td{font-weight:700;background:#eef5f4!important;color:var(--ink)}
 @media(max-width:680px){.answer-panel summary{padding:16px}.answer-body{padding:19px 16px 22px;font-size:15px}.answer-action{font-size:12px}.exercise-figure img{max-width:100%}}
 @media print{.answer-panel{border-color:#aaa}.answer-panel .answer-body{display:block!important}.answer-panel summary{padding-left:0}.answer-panel summary::after,.answer-action{display:none}}
+
+/* Pandoc-generated tables, figures and Python listings. */
+.question-body p,.answer-body p{margin:0 0 17px}
+.question-body ul,.question-body ol,.answer-body ul,.answer-body ol{padding-left:1.6em;margin:12px 0 20px}
+.question-body li,.answer-body li{margin:5px 0}
+.question-body figure,.answer-body figure{margin:24px auto;text-align:center}
+.question-body img,.answer-body img{display:block;max-width:min(100%,720px);height:auto;margin:auto}
+.question-body figcaption,.answer-body figcaption{font-size:14px;color:var(--muted);margin-top:10px}
+.sourceCode{max-width:100%;overflow-x:auto;margin:20px 0;border:1px solid var(--line);background:#f7f9fa}
+.sourceCode pre{margin:0;padding:16px 18px;overflow-x:auto;line-height:1.55;font:13px/1.55 Consolas,"Courier New",monospace}
+.sourceCode code{white-space:pre}
+.question-body code:not(.sourceCode code),.answer-body code:not(.sourceCode code){font:0.9em Consolas,"Courier New",monospace;background:#f2f5f6;padding:1px 4px;border-radius:3px}
+.table-scroll caption{caption-side:top;text-align:left;font-size:14px;font-weight:600;color:var(--muted);padding:0 0 8px}
+.table-scroll table{min-width:max-content}
+.math-display{overflow-x:auto}
