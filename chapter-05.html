@@ -1,17 +1,14 @@
 <!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="《运筹学 理论、模型及Python应用》学生用配套习题。"><title>第五章 运输问题 · 运筹学配套学习资源</title><link rel="stylesheet" href="styles.css"><link rel="icon" href="favicon.svg" type="image/svg+xml"></head><body><a class="skip-link" href="#main">跳至正文</a><header class="site-header"><a class="brand" href="index.html" aria-label="返回教材首页"><span class="brand-symbol">OR<span>+</span></span><span class="brand-name">运筹学<span>理论、模型及Python应用</span></span></a><nav aria-label="主导航"><a href="index.html">章节目录</a><span class="edition">学生版 · 配套习题</span></nav></header><main id="main" class="chapter-page"><div class="breadcrumb"><a href="index.html">章节目录</a><span aria-hidden="true">/</span><span>第五章</span></div><section class="chapter-intro"><div><p class="eyebrow">CHAPTER 05</p><h1>运输问题</h1><p>学生用课后习题 <span>·</span> 共 18 题</p></div><span class="chapter-watermark" aria-hidden="true">05</span></section><div class="reading-layout"><aside class="exercise-sidebar"><div class="sidebar-heading"><h2>本章习题</h2><span>01—18</span></div><nav aria-label="习题目录"><a href="#q1" data-question="1"><span>01</span>某连锁超市集团在A市有三个大型生鲜配送中…</a><a href="#q2" data-question="2"><span>02</span>在解决粮食运输问题时，分别有如下三种运输…</a><a href="#q3" data-question="3"><span>03</span>某半导体巨头公司在亚洲拥有三座晶圆厂（产…</a><a href="#q4" data-question="4"><span>04</span>某路桥工程公司正在进行一项跨海大桥的建设</a><a href="#q5" data-question="5"><span>05</span>为了应对突发的公共卫生事件，国家卫健委需…</a><a href="#q6" data-question="6"><span>06</span>某物流企业需将生鲜产品从3个产地运往4个…</a><a href="#q7" data-question="7"><span>07</span>某建筑公司需将砂石建材从3个料场（产地）…</a><a href="#q8" data-question="8"><span>08</span>已知4个产地（储备库A、B、C、D）向3…</a><a href="#q9" data-question="9"><span>09</span>某农产品合作社有4个产地（种植基地甲、乙…</a><a href="#q10" data-question="10"><span>10</span>根据现有运输方案</a><a href="#q11" data-question="11"><span>11</span>下列表格是通过最小元素法得到的初始方案</a><a href="#q12" data-question="12"><span>12</span>现有2个食品厂供应3个城市的零食需求，假…</a><a href="#q13" data-question="13"><span>13</span>现有3个粮油基地供应2个配送中心的粮油产…</a><a href="#q14" data-question="14"><span>14</span>某电子设备厂商从P、Q两个城市采购元器件…</a><a href="#q15" data-question="15"><span>15</span>某公司有甲、乙、丙三个分厂生产同一种产品…</a><a href="#q16" data-question="16"><span>16</span>已知运输问题的产销平衡表、单位运价表及一…</a><a href="#q17" data-question="17"><span>17</span>已知某运输问题的产量、销量及运输单价如下</a><a href="#q18" data-question="18"><span>18</span>某公司有甲、乙、丙三个分厂生产某种物资，…</a></nav></aside><div class="reading-main"><div class="mobile-jump"><label for="question-select">选择习题</label><select id="question-select"><option value="1">01 · 某连锁超市集团在A市有三个大型生鲜配送中…</option><option value="2">02 · 在解决粮食运输问题时，分别有如下三种运输…</option><option value="3">03 · 某半导体巨头公司在亚洲拥有三座晶圆厂（产…</option><option value="4">04 · 某路桥工程公司正在进行一项跨海大桥的建设</option><option value="5">05 · 为了应对突发的公共卫生事件，国家卫健委需…</option><option value="6">06 · 某物流企业需将生鲜产品从3个产地运往4个…</option><option value="7">07 · 某建筑公司需将砂石建材从3个料场（产地）…</option><option value="8">08 · 已知4个产地（储备库A、B、C、D）向3…</option><option value="9">09 · 某农产品合作社有4个产地（种植基地甲、乙…</option><option value="10">10 · 根据现有运输方案</option><option value="11">11 · 下列表格是通过最小元素法得到的初始方案</option><option value="12">12 · 现有2个食品厂供应3个城市的零食需求，假…</option><option value="13">13 · 现有3个粮油基地供应2个配送中心的粮油产…</option><option value="14">14 · 某电子设备厂商从P、Q两个城市采购元器件…</option><option value="15">15 · 某公司有甲、乙、丙三个分厂生产同一种产品…</option><option value="16">16 · 已知运输问题的产销平衡表、单位运价表及一…</option><option value="17">17 · 已知某运输问题的产量、销量及运输单价如下</option><option value="18">18 · 某公司有甲、乙、丙三个分厂生产某种物资，…</option></select></div><div id="question-content"><article class="question" id="q1" aria-labelledby="q1-title"><div class="question-heading"><p class="eyebrow">EXERCISE 01 / 18</p><h2 id="q1-title"><span>习题 01</span>某连锁超市集团在A市有三个大型生鲜配送中…</h2></div><div class="question-body"><p>某连锁超市集团在A市有三个大型生鲜配送中心（产地），分别向该市的四个主要门店（销地）供应新鲜蔬菜。根据历史销售数据和库存情况，各配送中心的日供应量、各门店的日需求量以及从各配送中心到各门店的单位运输成本（元/箱）如下表所示。</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
-<thead>
-<tr>
-<th style="text-align: center;"><strong>产地</strong></th>
-<th colspan="4"
-style="text-align: center;"><strong>销地（门店）</strong></th>
-<th style="text-align: center;"><strong>产量</strong></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><span>2-5</span>
-<strong>(配送中心)</strong></td>
+<td style="text-align: center;"><strong>产地</strong></td>
+<td colspan="4"
+style="text-align: center;"><strong>销地（门店）</strong></td>
+<td style="text-align: center;"><strong>产量</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>(配送中心)</strong></td>
 <td style="text-align: center;"><strong>门店1</strong></td>
 <td style="text-align: center;"><strong>门店2</strong></td>
 <td style="text-align: center;"><strong>门店3</strong></td>
@@ -54,16 +51,14 @@ style="text-align: center;"><strong>销地（门店）</strong></th>
 </table></div>
 <p>请设决策变量，建立该问题的线性规划数学模型，使总运输成本最小。</p></div></article><article class="question" id="q2" aria-labelledby="q2-title"><div class="question-heading"><p class="eyebrow">EXERCISE 02 / 18</p><h2 id="q2-title"><span>习题 02</span>在解决粮食运输问题时，分别有如下三种运输…</h2></div><div class="question-body"><p>在解决粮食运输问题时，分别有如下三种运输方案，请问这三种方案能否作为表上作业法求解的初始解？为什么？</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
-<thead>
-<tr>
-<th style="text-align: center;"><strong>产地</strong></th>
-<th colspan="4" style="text-align: center;"><strong>销地</strong></th>
-<th style="text-align: center;"><strong>产量</strong></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><span>2-5</span></td>
+<td style="text-align: center;"><strong>产地</strong></td>
+<td colspan="4" style="text-align: center;"><strong>销地</strong></td>
+<td style="text-align: center;"><strong>产量</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
 <td style="text-align: center;"><strong>1</strong></td>
 <td style="text-align: center;"><strong>2</strong></td>
 <td style="text-align: center;"><strong>3</strong></td>
@@ -105,16 +100,14 @@ style="text-align: center;"><strong>销地（门店）</strong></th>
 </tbody>
 </table></div>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
-<thead>
-<tr>
-<th style="text-align: center;"><strong>产地</strong></th>
-<th colspan="4" style="text-align: center;"><strong>销地</strong></th>
-<th style="text-align: center;"><strong>产量</strong></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><span>2-5</span></td>
+<td style="text-align: center;"><strong>产地</strong></td>
+<td colspan="4" style="text-align: center;"><strong>销地</strong></td>
+<td style="text-align: center;"><strong>产量</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
 <td style="text-align: center;"><strong>1</strong></td>
 <td style="text-align: center;"><strong>2</strong></td>
 <td style="text-align: center;"><strong>3</strong></td>
@@ -156,16 +149,14 @@ style="text-align: center;"><strong>销地（门店）</strong></th>
 </tbody>
 </table></div>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
-<thead>
-<tr>
-<th style="text-align: center;"><strong>产地</strong></th>
-<th colspan="4" style="text-align: center;"><strong>销地</strong></th>
-<th style="text-align: center;"><strong>产量</strong></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><span>2-5</span></td>
+<td style="text-align: center;"><strong>产地</strong></td>
+<td colspan="4" style="text-align: center;"><strong>销地</strong></td>
+<td style="text-align: center;"><strong>产量</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
 <td style="text-align: center;"><strong>1</strong></td>
 <td style="text-align: center;"><strong>2</strong></td>
 <td style="text-align: center;"><strong>3</strong></td>
@@ -207,18 +198,15 @@ style="text-align: center;"><strong>销地（门店）</strong></th>
 </tbody>
 </table></div></div></article><article class="question" id="q3" aria-labelledby="q3-title"><div class="question-heading"><p class="eyebrow">EXERCISE 03 / 18</p><h2 id="q3-title"><span>习题 03</span>某半导体巨头公司在亚洲拥有三座晶圆厂（产…</h2></div><div class="question-body"><p>某半导体巨头公司在亚洲拥有三座晶圆厂（产地），需要将生产好的高性能芯片运往美洲的四个区域分销中心（销地）。由于物流成本高昂且受限于航班运力，公司需要制定一个成本最低的运输计划。已知各工厂的月产量、各分销中心的月需求量以及单位运费（美元/千片）如下表所示。请利用西北角法制定初始运输方案，并计算初始解的总运输成本。</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
-<thead>
-<tr>
-<th style="text-align: center;"><strong>产地</strong></th>
-<th colspan="4"
-style="text-align: center;"><strong>销地（分销中心）</strong></th>
-<th style="text-align: center;"><strong>产量</strong></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><span>2-5</span>
-<strong>(晶圆厂)</strong></td>
+<td style="text-align: center;"><strong>产地</strong></td>
+<td colspan="4"
+style="text-align: center;"><strong>销地（分销中心）</strong></td>
+<td style="text-align: center;"><strong>产量</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>(晶圆厂)</strong></td>
 <td style="text-align: center;"><strong>北美区</strong></td>
 <td style="text-align: center;"><strong>中美区</strong></td>
 <td style="text-align: center;"><strong>南美区</strong></td>
@@ -260,18 +248,15 @@ style="text-align: center;"><strong>销地（分销中心）</strong></th>
 </tbody>
 </table></div></div></article><article class="question" id="q4" aria-labelledby="q4-title"><div class="question-heading"><p class="eyebrow">EXERCISE 04 / 18</p><h2 id="q4-title"><span>习题 04</span>某路桥工程公司正在进行一项跨海大桥的建设</h2></div><div class="question-body"><p>某路桥工程公司正在进行一项跨海大桥的建设。为了保证混凝土供应，公司租用了三个采石场（产地）来生产碎石，并需要将其运送到四个施工标段（销地）。由于标段距离不同且路况复杂，运输成本差异较大。已知各采石场的日供应能力、各标段的日需求量以及单位运输成本（元/吨）如下表所示。请建立该运输问题的数学模型，并利用伏格尔法制定初始运输方案，并计算初始解的总运输成本。</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
-<thead>
-<tr>
-<th style="text-align: center;"><strong>产地</strong></th>
-<th colspan="4"
-style="text-align: center;"><strong>销地（施工标段）</strong></th>
-<th style="text-align: center;"><strong>产量</strong></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><span>2-5</span>
-<strong>(采石场)</strong></td>
+<td style="text-align: center;"><strong>产地</strong></td>
+<td colspan="4"
+style="text-align: center;"><strong>销地（施工标段）</strong></td>
+<td style="text-align: center;"><strong>产量</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>(采石场)</strong></td>
 <td style="text-align: center;"><strong>北岸引桥</strong></td>
 <td style="text-align: center;"><strong>主桥A段</strong></td>
 <td style="text-align: center;"><strong>主桥B段</strong></td>
@@ -313,18 +298,15 @@ style="text-align: center;"><strong>销地（施工标段）</strong></th>
 </tbody>
 </table></div></div></article><article class="question" id="q5" aria-labelledby="q5-title"><div class="question-heading"><p class="eyebrow">EXERCISE 05 / 18</p><h2 id="q5-title"><span>习题 05</span>为了应对突发的公共卫生事件，国家卫健委需…</h2></div><div class="question-body"><p>为了应对突发的公共卫生事件，国家卫健委需要将储备的一批特效疫苗从三个国家级储备库（产地）调运到四个受灾严重的城市（销地）。由于时间紧迫且需要冷链运输，调度的目标是在满足需求的前提下，使总运输成本最低。已知各储备库的疫苗库存量、各城市的急需量以及单位运输成本（百元/万剂）如下表所示。利用最小元素法制定初始运输方案，并计算初始解的总运输成本。</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
-<thead>
-<tr>
-<th style="text-align: center;"><strong>产地</strong></th>
-<th colspan="4"
-style="text-align: center;"><strong>销地（受灾城市）</strong></th>
-<th style="text-align: center;"><strong>产量</strong></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><span>2-5</span>
-<strong>(储备库)</strong></td>
+<td style="text-align: center;"><strong>产地</strong></td>
+<td colspan="4"
+style="text-align: center;"><strong>销地（受灾城市）</strong></td>
+<td style="text-align: center;"><strong>产量</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>(储备库)</strong></td>
 <td style="text-align: center;"><strong>城市A</strong></td>
 <td style="text-align: center;"><strong>城市B</strong></td>
 <td style="text-align: center;"><strong>城市C</strong></td>
@@ -368,216 +350,191 @@ style="text-align: center;"><strong>销地（受灾城市）</strong></th>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
 <tbody>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">产地</td>
+<td colspan="8" style="text-align: center;">销地</td>
+<td rowspan="2" style="text-align: center;">产量（箱）</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td colspan="2" style="text-align: center;">城市A</td>
+<td colspan="2" style="text-align: center;">城市B</td>
+<td colspan="2" style="text-align: center;">城市C</td>
+<td colspan="2" style="text-align: center;">城市D</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">北京</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">85</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">95</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">110</td>
+<td rowspan="2" style="text-align: center;">80</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">上海</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">90</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">105</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">95</td>
+<td rowspan="2" style="text-align: center;">100</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">75</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">广州</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">115</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">95</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">100</td>
+<td rowspan="2" style="text-align: center;">70</td>
 </tr>
 <tr>
-<td style="text-align: left;">销量（箱）</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">销量（箱）</td>
+<td colspan="2" style="text-align: center;">60</td>
+<td colspan="2" style="text-align: center;">75</td>
+<td colspan="2" style="text-align: center;">85</td>
+<td colspan="2" style="text-align: center;">30</td>
+<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table></div></div></article><article class="question" id="q7" aria-labelledby="q7-title"><div class="question-heading"><p class="eyebrow">EXERCISE 07 / 18</p><h2 id="q7-title"><span>习题 07</span>某建筑公司需将砂石建材从3个料场（产地）…</h2></div><div class="question-body"><p>某建筑公司需将砂石建材从3个料场（产地）运往4个施工工地（销地），初始运输方案如下表所示（单元格上行为单位运输成本（元/吨），下行为调运量（吨））。请采用<strong>闭合回路法</strong>计算所有非基变量的检验数，并判断当前方案是否为最优方案。</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
 <tbody>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">产地</td>
+<td colspan="8" style="text-align: center;">销地（施工工地）</td>
+<td rowspan="2" style="text-align: center;">产量（吨）</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td colspan="2" style="text-align: center;">工地1</td>
+<td colspan="2" style="text-align: center;">工地2</td>
+<td colspan="2" style="text-align: center;">工地3</td>
+<td colspan="2" style="text-align: center;">工地4</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">料场甲</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">18</td>
+<td rowspan="2" style="text-align: center;">90</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">料场乙</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">11</td>
+<td rowspan="2" style="text-align: center;">80</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">料场丙</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">15</td>
+<td rowspan="2" style="text-align: center;">70</td>
 </tr>
 <tr>
-<td style="text-align: left;">销量（吨）</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">销量（吨）</td>
+<td colspan="2" style="text-align: center;">50</td>
+<td colspan="2" style="text-align: center;">70</td>
+<td colspan="2" style="text-align: center;">70</td>
+<td colspan="2" style="text-align: center;">50</td>
+<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table></div></div></article><article class="question" id="q8" aria-labelledby="q8-title"><div class="question-heading"><p class="eyebrow">EXERCISE 08 / 18</p><h2 id="q8-title"><span>习题 08</span>已知4个产地（储备库A、B、C、D）向3…</h2></div><div class="question-body"><p>已知4个产地（储备库A、B、C、D）向3个销地（城市X、Y、Z）运输某物资，运输单价、产地产量、销地销量如下：</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
-<thead>
-<tr>
-<th style="text-align: center;"><strong>产地</strong></th>
-<th colspan="3"
-style="text-align: center;"><strong>销地（城市）</strong></th>
-<th style="text-align: center;"><strong>产量</strong></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><span>2-4</span>
-<strong>(储备库)</strong></td>
+<td style="text-align: center;"><strong>产地</strong></td>
+<td colspan="3"
+style="text-align: center;"><strong>销地（城市）</strong></td>
+<td style="text-align: center;"><strong>产量</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>(储备库)</strong></td>
 <td style="text-align: center;"><strong>城市X</strong></td>
 <td style="text-align: center;"><strong>城市Y</strong></td>
 <td style="text-align: center;"><strong>城市Z</strong></td>
@@ -622,18 +579,15 @@ style="text-align: center;"><strong>销地（城市）</strong></th>
 </table></div>
 <p>用最小元素法确定初始运输方案，再通过闭合回路法迭代优化，求解最小运输成本。</p></div></article><article class="question" id="q9" aria-labelledby="q9-title"><div class="question-heading"><p class="eyebrow">EXERCISE 09 / 18</p><h2 id="q9-title"><span>习题 09</span>某农产品合作社有4个产地（种植基地甲、乙…</h2></div><div class="question-body"><p>某农产品合作社有4个产地（种植基地甲、乙、丙、丁），向3个销地（生鲜批发市场P、Q、R）供应优质草莓，不同基地到市场的单位收益、各基地产量及各市场需求量如下表所示。因草莓保鲜期短，需一次性完成调运，目标是通过合理规划运输方案，实现总收益最大化。</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
-<thead>
-<tr>
-<th style="text-align: center;"><strong>产地</strong></th>
-<th colspan="3"
-style="text-align: center;"><strong>销地（生鲜批发市场）</strong></th>
-<th style="text-align: center;"><strong>产量</strong></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><span>2-4</span>
-<strong>（种植基地）</strong></td>
+<td style="text-align: center;"><strong>产地</strong></td>
+<td colspan="3"
+style="text-align: center;"><strong>销地（生鲜批发市场）</strong></td>
+<td style="text-align: center;"><strong>产量</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>（种植基地）</strong></td>
 <td style="text-align: center;"><strong>市场P</strong></td>
 <td style="text-align: center;"><strong>市场Q</strong></td>
 <td style="text-align: center;"><strong>市场R</strong></td>
@@ -680,84 +634,75 @@ style="text-align: center;"><strong>销地（生鲜批发市场）</strong></th>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
 <tbody>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">产地</td>
+<td colspan="6" style="text-align: center;">销地</td>
+<td rowspan="2" style="text-align: center;">产量（吨）</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td colspan="2" style="text-align: center;">商场P</td>
+<td colspan="2" style="text-align: center;">商场Q</td>
+<td colspan="2" style="text-align: center;">商场R</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">仓库甲</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">9</td>
+<td rowspan="2" style="text-align: center;">20</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">仓库乙</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">8</td>
+<td rowspan="2" style="text-align: center;">40</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">仓库丙</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">6</td>
+<td rowspan="2" style="text-align: center;">40</td>
 </tr>
 <tr>
-<td style="text-align: left;">销量（吨）</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">销量（吨）</td>
+<td colspan="2" style="text-align: center;">25</td>
+<td colspan="2" style="text-align: center;">35</td>
+<td colspan="2" style="text-align: center;">40</td>
+<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table></div>
@@ -765,104 +710,93 @@ style="text-align: center;"><strong>销地（生鲜批发市场）</strong></th>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
 <tbody>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">产地</td>
+<td colspan="6" style="text-align: center;">销地</td>
+<td rowspan="2" style="text-align: center;">产量（吨）</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td colspan="2" style="text-align: center;">销地A</td>
+<td colspan="2" style="text-align: center;">销地B</td>
+<td colspan="2" style="text-align: center;">销地C</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">产地1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">9</td>
+<td rowspan="2" style="text-align: center;">20</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">产地2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">8</td>
+<td rowspan="2" style="text-align: center;">25</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">产地3</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">6</td>
+<td rowspan="2" style="text-align: center;">25</td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td rowspan="2" style="text-align: center;">产地4</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">10</td>
+<td rowspan="2" style="text-align: center;">25</td>
 </tr>
 <tr>
-<td style="text-align: left;">销量（吨）</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">销量（吨）</td>
+<td colspan="2" style="text-align: center;">25</td>
+<td colspan="2" style="text-align: center;">35</td>
+<td colspan="2" style="text-align: center;">35</td>
+<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table></div>
@@ -994,16 +928,14 @@ style="text-align: center;"><strong>销地（生鲜批发市场）</strong></th>
 <p>请确定一个运输方案使该公司获利最多。</p></div></article><article class="question" id="q16" aria-labelledby="q16-title"><div class="question-heading"><p class="eyebrow">EXERCISE 16 / 18</p><h2 id="q16-title"><span>习题 16</span>已知运输问题的产销平衡表、单位运价表及一…</h2></div><div class="question-body"><p>已知运输问题的产销平衡表、单位运价表及一个可行调运方案如下表所示。</p>
 <div class="center">
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
-<thead>
-<tr>
-<th style="text-align: center;"><strong>产地</strong></th>
-<th colspan="4" style="text-align: center;"><strong>销地</strong></th>
-<th style="text-align: center;"><strong>产量</strong></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><span>2-5</span></td>
+<td style="text-align: center;"><strong>产地</strong></td>
+<td colspan="4" style="text-align: center;"><strong>销地</strong></td>
+<td style="text-align: center;"><strong>产量</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
 <td style="text-align: center;"><strong>1</strong></td>
 <td style="text-align: center;"><strong>2</strong></td>
 <td style="text-align: center;"><strong>3</strong></td>
@@ -1047,16 +979,14 @@ style="text-align: center;"><strong>销地（生鲜批发市场）</strong></th>
 </div>
 <div class="center">
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
-<thead>
-<tr>
-<th style="text-align: center;"><strong>产地</strong></th>
-<th colspan="4" style="text-align: center;"><strong>销地</strong></th>
-<th style="text-align: center;"><strong>备注</strong></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><span>2-5</span></td>
+<td style="text-align: center;"><strong>产地</strong></td>
+<td colspan="4" style="text-align: center;"><strong>销地</strong></td>
+<td style="text-align: center;"><strong>备注</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
 <td style="text-align: center;"><span class="math math-inline" role="math" aria-label="\mathbf{B_1}"><span aria-hidden="true"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.339ex;" xmlns="http://www.w3.org/2000/svg" width="2.958ex" height="1.891ex" role="img" focusable="false" viewBox="0 -686 1307.6 836"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D401" d="M720 510Q720 476 704 448T665 404T619 377T580 362L564 359L583 356Q602 353 632 342T690 312Q712 292 725 276Q752 235 752 189V183Q752 160 741 125Q698 18 547 2Q543 1 288 0H39V62H147V624H39V686H264H409Q502 686 542 681T624 655Q720 607 720 510ZM563 513Q563 553 548 578T518 611T486 622Q479 624 385 624H293V382H375Q458 383 467 385Q563 405 563 513ZM590 192Q590 307 505 329Q504 330 503 330L398 331H293V62H391H400H444Q496 62 528 75T580 131Q590 155 590 192Z"></path></g><g data-mml-node="mn" transform="translate(851,-150) scale(0.707)"><path data-c="1D7CF" d="M481 0L294 3Q136 3 109 0H96V62H227V304Q227 546 225 546Q169 529 97 529H80V591H97Q231 591 308 647L319 655H333Q355 655 359 644Q361 640 361 351V62H494V0H481Z"></path></g></g></g></g></g></svg></mjx-container></span></span></td>
 <td style="text-align: center;"><span class="math math-inline" role="math" aria-label="\mathbf{B_2}"><span aria-hidden="true"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.339ex;" xmlns="http://www.w3.org/2000/svg" width="2.958ex" height="1.891ex" role="img" focusable="false" viewBox="0 -686 1307.6 836"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D401" d="M720 510Q720 476 704 448T665 404T619 377T580 362L564 359L583 356Q602 353 632 342T690 312Q712 292 725 276Q752 235 752 189V183Q752 160 741 125Q698 18 547 2Q543 1 288 0H39V62H147V624H39V686H264H409Q502 686 542 681T624 655Q720 607 720 510ZM563 513Q563 553 548 578T518 611T486 622Q479 624 385 624H293V382H375Q458 383 467 385Q563 405 563 513ZM590 192Q590 307 505 329Q504 330 503 330L398 331H293V62H391H400H444Q496 62 528 75T580 131Q590 155 590 192Z"></path></g><g data-mml-node="mn" transform="translate(851,-150) scale(0.707)"><path data-c="1D7D0" d="M175 580Q175 578 185 572T205 551T215 510Q215 467 191 449T137 430Q107 430 83 448T58 511Q58 558 91 592T168 640T259 654Q328 654 383 637Q451 610 484 563T517 459Q517 401 482 360T368 262Q340 243 265 184L210 140H274Q416 140 429 145Q439 148 447 186T455 237H517V233Q516 230 501 119Q489 9 486 4V0H57V25Q57 51 58 54Q60 57 109 106T215 214T288 291Q364 377 364 458Q364 515 328 553T231 592Q214 592 201 589T181 584T175 580Z"></path></g></g></g></g></g></svg></mjx-container></span></span></td>
 <td style="text-align: center;"><span class="math math-inline" role="math" aria-label="\mathbf{B_3}"><span aria-hidden="true"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.357ex;" xmlns="http://www.w3.org/2000/svg" width="2.958ex" height="1.909ex" role="img" focusable="false" viewBox="0 -686 1307.6 843.8"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D401" d="M720 510Q720 476 704 448T665 404T619 377T580 362L564 359L583 356Q602 353 632 342T690 312Q712 292 725 276Q752 235 752 189V183Q752 160 741 125Q698 18 547 2Q543 1 288 0H39V62H147V624H39V686H264H409Q502 686 542 681T624 655Q720 607 720 510ZM563 513Q563 553 548 578T518 611T486 622Q479 624 385 624H293V382H375Q458 383 467 385Q563 405 563 513ZM590 192Q590 307 505 329Q504 330 503 330L398 331H293V62H391H400H444Q496 62 528 75T580 131Q590 155 590 192Z"></path></g><g data-mml-node="mn" transform="translate(851,-150) scale(0.707)"><path data-c="1D7D1" d="M80 503Q80 565 133 610T274 655Q366 655 421 623T491 538Q493 528 493 510Q493 446 453 407T361 348L376 344Q452 324 489 281T526 184Q526 152 514 121T474 58T392 8T265 -11Q175 -11 111 34T48 152Q50 187 72 209T132 232Q171 232 193 208T216 147Q216 136 214 126T207 108T197 94T187 84T178 77T170 72L168 71Q168 70 179 65T215 54T266 48H270Q331 48 350 105Q358 128 358 185Q358 239 348 268T309 313Q292 321 242 322Q205 322 198 324T191 341V348Q191 366 196 369T232 375Q239 375 247 376T260 377T268 378Q284 383 297 393T326 436T341 517Q341 536 339 547T331 573T308 593T266 600Q248 600 241 599Q214 593 183 576Q234 556 234 503Q234 462 210 444T157 426Q126 426 103 446T80 503Z"></path></g></g></g></g></g></svg></mjx-container></span></span></td>
@@ -1195,18 +1125,15 @@ style="text-align: center;"><strong>销地（生鲜批发市场）</strong></th>
 <p>各产地、中转站、销地及相互之间每吨物资的运价如表2所示，问在考虑禁运约束和转运的各种可能方案下，如何将三个分厂生产的物资运往销售公司，使总运费最少？</p>
 <p>表2</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="题目数据表"><table>
-<thead>
-<tr>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
-<th colspan="3" style="text-align: center;"><strong><span class="math math-inline" role="math" aria-label="\text{产地}"><span aria-hidden="true"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 2000 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">产</text><text data-variant="normal" transform="translate(1000,0) scale(1,-1)" font-size="884px" font-family="serif">地</text></g></g></g></svg></mjx-container></span></span></strong></th>
-<th colspan="2" style="text-align: center;"><strong><span class="math math-inline" role="math" aria-label="\text{中转站}"><span aria-hidden="true"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="6.787ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 3000 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">中</text><text data-variant="normal" transform="translate(1000,0) scale(1,-1)" font-size="884px" font-family="serif">转</text><text data-variant="normal" transform="translate(2000,0) scale(1,-1)" font-size="884px" font-family="serif">站</text></g></g></g></svg></mjx-container></span></span></strong></th>
-<th colspan="4" style="text-align: center;"><strong><span class="math math-inline" role="math" aria-label="\text{销地}"><span aria-hidden="true"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 2000 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">销</text><text data-variant="normal" transform="translate(1000,0) scale(1,-1)" font-size="884px" font-family="serif">地</text></g></g></g></svg></mjx-container></span></span></strong></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><span>3-11</span></td>
+<td rowspan="2" style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td colspan="3" style="text-align: center;"><strong><span class="math math-inline" role="math" aria-label="\text{产地}"><span aria-hidden="true"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 2000 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">产</text><text data-variant="normal" transform="translate(1000,0) scale(1,-1)" font-size="884px" font-family="serif">地</text></g></g></g></svg></mjx-container></span></span></strong></td>
+<td colspan="2" style="text-align: center;"><strong><span class="math math-inline" role="math" aria-label="\text{中转站}"><span aria-hidden="true"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="6.787ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 3000 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">中</text><text data-variant="normal" transform="translate(1000,0) scale(1,-1)" font-size="884px" font-family="serif">转</text><text data-variant="normal" transform="translate(2000,0) scale(1,-1)" font-size="884px" font-family="serif">站</text></g></g></g></svg></mjx-container></span></span></strong></td>
+<td colspan="4" style="text-align: center;"><strong><span class="math math-inline" role="math" aria-label="\text{销地}"><span aria-hidden="true"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 2000 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">销</text><text data-variant="normal" transform="translate(1000,0) scale(1,-1)" font-size="884px" font-family="serif">地</text></g></g></g></svg></mjx-container></span></span></strong></td>
+</tr>
+<tr>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"><span class="math math-inline" role="math" aria-label="\boldsymbol{\text{甲}}"><span aria-hidden="true"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 1000 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">甲</text></g></g></g></svg></mjx-container></span></span></td>
 <td style="text-align: center;"><span class="math math-inline" role="math" aria-label="\boldsymbol{\text{乙}}"><span aria-hidden="true"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 1000 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">乙</text></g></g></g></svg></mjx-container></span></span></td>
